@@ -1,0 +1,1001 @@
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:16:25 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (6.6ms)
+Completed 200 OK in 499ms (Views: 20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:18:44 -0300
+  [1m[35m (3.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK(1143268810739741490, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnnotations (20170524181744)
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE `annotations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(1143268810739741490)[0m
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:19:21 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:19:24 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:19:52 -0300
+  [1m[35m (5.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.1) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(1143268810739741490, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnnotations (20170524181744)
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE `annotations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(1143268810739741490)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (22.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(1143268810739741490, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateAnnotations (20170524181744)
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE `annotations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (15.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170524181744')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriends (20170524181823)
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE `friends` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `address` varchar(255), `email` varchar(255), `phone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (10.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170524181823')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-24 18:22:35', '2017-05-24 18:22:35')[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(1143268810739741490)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW CREATE TABLE `annotations`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'annotations'[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `friends`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'friends'[0m
+Started GET "/" for 127.0.0.1 at 2017-05-24 15:22:44 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 28ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:01:31 -0300
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 30ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:01:33 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2017-05-24 16:01:42 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (15.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms) [cache miss]
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-24 16:01:50 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1899ms (Views: 1898.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-24 16:13:18 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-24 16:13:26 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 151ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:13:32 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:15:59 -0300
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 766ms (Views: 744.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:16:32 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 140ms (Views: 131.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:21:00 -0300
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (3.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (26.9ms)
+Completed 500 Internal Server Error in 489ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__196069742125894198_70051089772460'
+  [1m[35m (7.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:26:51 -0300
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 3072ms (Views: 3056.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:28:01 -0300
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 3832ms (Views: 3805.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:28:12 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (7.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 143ms (Views: 134.6ms | ActiveRecord: 7.3ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:31:34 -0300
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (2.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 851ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__3476031684384816385_70267684061200'
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/annotations" for 127.0.0.1 at 2017-05-24 16:32:50 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 836ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1064373326655545855_43622800'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:32:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1064373326655545855_69963271297920'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:34:10 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 749ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__736202872875012687_70288923954080'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:35:15 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 858ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__1995051790089060338_35998840'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:39:26 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 865ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1569683577059945434_70178128401180'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:42:14 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 722ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___463787868500222633_37486940'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:50:44 -0300
+  [1m[35m (5.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 817ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    20: 
+    21:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    22:     <!-- Size should be 144 x 144 pixels -->
+    23:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    24: 
+    25:     <!-- For iPhone with high-resolution Retina display: -->
+    26:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:23:in `_app_views_layouts_application_html_erb___2547171217608525200_36892980'
+Started GET "/" for 127.0.0.1 at 2017-05-24 16:51:27 -0300
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 853ms (Views: 836.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-25 14:00:09 -0300
+  [1m[35m (18.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 2930ms (Views: 2869.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-25 14:08:35 -0300
+  [1m[35m (5.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 2260ms (Views: 2196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-25 14:08:45 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 205ms (Views: 203.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-25 14:12:57 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2846ms (Views: 2777.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 14:13:10 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (6.1ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (392.1ms)
+Completed 200 OK in 824ms (Views: 691.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 14:13:14 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 530ms (Views: 433.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-25 14:13:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 332ms (Views: 328.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 14:24:58 -0300
+  [1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 2807ms (Views: 2734.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 14:25:06 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (3.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 299ms (Views: 277.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 14:25:10 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 240ms (Views: 224.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 14:40:49 -0300
+  [1m[35m (2.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 853ms (Views: 834.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2017-05-25 14:41:43 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (131.8ms) [cache miss]
+  Rendered annotations/new.html.erb within layouts/application (604.4ms)
+Completed 200 OK in 756ms (Views: 669.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2017-05-25 14:42:56 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"isU0sJCxHwC1mvc9IUQ2ABEwLI6dRFYmZY4ak4TepefC1WxHdeQ4kR8qxDjNF6VRU0uauHfjAMGzrTjZvNrwEA==", "annotation"=>{"body"=>"Testando"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.3ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('Testando', '2017-05-25 17:42:56', '2017-05-25 17:42:56')[0m
+  [1m[35m (46.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/annotations/1
+Completed 302 Found in 60ms (ActiveRecord: 53.9ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2017-05-25 14:42:57 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (5.0ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 135ms (Views: 74.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 14:43:13 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:00:41 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 128ms (Views: 123.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:00:42 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (7.0ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 280ms (Views: 223.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:01:24 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K16PxAlHghWQL4IhUIST+GwqPWZ/XKyoCUzWm8EZ+HhjTtcz7BKlhDqfsSS81wCpLlGLUJX7+k/fb/TR+R2tjw==", "friend"=>{"name"=>"Toti Cavalcanti", "address"=>"Av. Pasteur 214/909, Botafogo", "email"=>"toticavalcanti@gmail.com", "phone"=>"(21)988714006"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Toti Cavalcanti', 'Av. Pasteur 214/909, Botafogo', 'toticavalcanti@gmail.com', '(21)988714006', '2017-05-25 18:01:24', '2017-05-25 18:01:24')[0m
+  [1m[35m (78.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/1
+Completed 302 Found in 94ms (ActiveRecord: 80.1ms)
+
+
+Started GET "/friends/1" for 127.0.0.1 at 2017-05-25 15:01:24 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (2.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 1 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 146ms (Views: 104.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:01:32 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 133ms (Views: 130.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:03:35 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 141ms (Views: 134.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:03:38 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 137ms (Views: 135.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:03:41 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 139ms (Views: 136.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends/1" for 127.0.0.1 at 2017-05-25 15:03:48 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (1.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 1 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 131ms (Views: 127.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:03:51 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:13:36 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 212ms (Views: 209.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:15:17 -0300
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 1006ms (Views: 978.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:16:06 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2017-05-25 15:19:21 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  Rendered annotations/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 126ms (Views: 121.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2017-05-25 15:19:23 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (34.8ms) [cache miss]
+  Rendered annotations/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 145ms (Views: 143.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:34:12 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (2.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 857ms (Views: 826.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:34:14 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (12.6ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:34:50 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vLgiSWr8NKZWWGSijn6o91Tl1wgFtFiELi5kno2WcI30qHq+j6kTN/zoV6diLTumFp5hPu8TDmP4DUbUtZIleg==", "friend"=>{"name"=>"Carlos Souza", "address"=>"Catete", "email"=>"carlos@mail.com", "phone"=>"(21)123456789"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Carlos Souza', 'Catete', 'carlos@mail.com', '(21)123456789', '2017-05-25 18:34:50', '2017-05-25 18:34:50')[0m
+  [1m[35m (213.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/2
+Completed 302 Found in 227ms (ActiveRecord: 219.8ms)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2017-05-25 15:34:50 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (5.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 2 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 81ms (Views: 72.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:34:52 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 99ms (Views: 94.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:34:55 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (2.9ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:35:40 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olHiE+ZGTyrzelnG94OHhZ6HjJHTJUoUdHxE0iph3CfqQbrkAxNou1nKasMb0BTU3Pw6pzmCHPOiX2aYEmWJ0A==", "friend"=>{"name"=>"Marlene Correia", "address"=>"Glória", "email"=>"gloria@mail.com", "phone"=>"(21)546783343"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Marlene Correia', 'Glória', 'gloria@mail.com', '(21)546783343', '2017-05-25 18:35:40', '2017-05-25 18:35:40')[0m
+  [1m[35m (61.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/3
+Completed 302 Found in 68ms (ActiveRecord: 63.0ms)
+
+
+Started GET "/friends/3" for 127.0.0.1 at 2017-05-25 15:35:40 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 3 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:35:42 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:35:44 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (3.3ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:36:40 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qn79yKARZ932MpMgksTNQIKwbAzZOdJfLVuJUgm7KqLibqU/RURATFyCoCV+l14RwMvaOjOehLj7eKsYMb9/VQ==", "friend"=>{"name"=>"Odete Carvalho", "address"=>"Av. Gen Olimpio", "email"=>"Odet@mail.com", "phone"=>"(21)898878743"}, "commit"=>"Criar Amigos"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Odete Carvalho', 'Av. Gen Olimpio', 'Odet@mail.com', '(21)898878743', '2017-05-25 18:36:40', '2017-05-25 18:36:40')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/4
+Completed 302 Found in 15ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/friends/4" for 127.0.0.1 at 2017-05-25 15:36:40 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 4 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 112ms (Views: 100.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:36:42 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  Rendered friends/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 227ms (Views: 225.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:36:44 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (8.1ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 114ms (Views: 112.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:37:23 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aK9foCriWyggAK6nmhLfWpIdx5i+35c+Mcz1cADUaxMgvwdXz7d8uYqwnaJ2QUwL0GZxrlR4wdnn79c6ONA+5A==", "friend"=>{"name"=>"Josivaldo Severo", "address"=>"Av. Portela", "email"=>"josivaldo@mail.com", "phone"=>"(21)998877665"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Josivaldo Severo', 'Av. Portela', 'josivaldo@mail.com', '(21)998877665', '2017-05-25 18:37:23', '2017-05-25 18:37:23')[0m
+  [1m[35m (72.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/5
+Completed 302 Found in 78ms (ActiveRecord: 72.4ms)
+
+
+Started GET "/friends/5" for 127.0.0.1 at 2017-05-25 15:37:24 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 5 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:37:25 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 163ms (Views: 152.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2017-05-25 15:37:27 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (7.5ms) [cache miss]
+  Rendered friends/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2017-05-25 15:38:29 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"anaHtvD4FbUDxDhzi4AqHSFNLKHIiT29wxghNLyA3pwiZt9BFa0yJKl0C3Zn07lMYzaalyIua1oVOwN+hISLaw==", "friend"=>{"name"=>"Álvaro Silva", "address"=>"Rua das Flores", "email"=>"alvaro@mail.com", "phone"=>"(21)987678763"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.4ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Álvaro Silva', 'Rua das Flores', 'alvaro@mail.com', '(21)987678763', '2017-05-25 18:38:29', '2017-05-25 18:38:29')[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/friends/6
+Completed 302 Found in 14ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/friends/6" for 127.0.0.1 at 2017-05-25 15:38:29 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 6 LIMIT 1[0m
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 126ms (Views: 120.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2017-05-25 15:38:31 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 160ms (Views: 155.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/friends?page=2" for 127.0.0.1 at 2017-05-25 15:38:37 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 5[0m
+  Rendered friends/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends?page=1" for 127.0.0.1 at 2017-05-25 15:38:41 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 122ms (Views: 112.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/friends?page=1" for 127.0.0.1 at 2017-05-25 15:42:58 -0300
+  [1m[35m (2.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (2.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  Rendered friends/index.html.erb within layouts/application (80.0ms)
+Completed 200 OK in 820ms (Views: 787.2ms | ActiveRecord: 4.9ms)
+
+
